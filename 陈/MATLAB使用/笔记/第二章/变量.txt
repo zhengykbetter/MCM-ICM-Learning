@@ -1,0 +1,25 @@
+MATLAB不需要提前声明变量类型，感觉很像python，对于习惯Java的不太熟悉，但是方便啊
+字母开头，不超过63个字符（那么长油饼罢），不能和关键字同名，iskeyword得到所以关键字
+阶乘factorial(n)
+上键盘查询名称
+ans:之前的计算结果
+i和j表示复数中的虚数单位
+eps表示浮点相对精度
+eps = 2.22044604925031e-16
+exp表示e的几次方，可用exp(1)表示e
+format（style）将输出格式改为style指定的格式，不影响MATLAB计算或保存它们的格式
+fmt = format
+返回当前显示格式
+clc：清空命令行窗口
+clear：清空工作区
+在代码行最后加上分号，则计算结果不在命令行显示，而在工作区显示
+字符与字符串相关操作：
+strcat(s1,s2,...)删除合并后字符串尾部空格，将多个字符串合并
+char/strvat(s1,s2,...)将字符串合并成字符数组
+abs(s1),将字符串转换为(按每个字符为单位转化为数组)ASCII码值
+double(s)转化为double型的数据
+str2num(s)将字符串s转换为数值
+num2str(s)将数值n转换为字符串
+mat2str(mat)将矩阵mat转换为字符串
+setstr(n)将ASCII码值n转换为字符
+int2str(n)将整数n转换为字符串

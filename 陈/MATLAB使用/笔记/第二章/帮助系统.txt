@@ -1,0 +1,7 @@
+使用MATLAB帮助系统：
+https://ww2.mathworks.cn/help/index.html——官网搜索
+命令行doc+命令，可以转到官网文档，但是MATLAB内部打开
+help命令，可以在命令行打开帮助
+edit命令可以打开命令所在的原文档
+ctrl+r可以给选重的文件加入注释，ctrl+t取消注释
+
