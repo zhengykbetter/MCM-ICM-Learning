@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 import math
-
-# s1 = pd.Series(['X1', 'X1', 'X2', 'X2', 'X2', 'X2'])
-# s2 = pd.Series(['Y1', 'Y1', 'Y1', 'Y2', 'Y2', 'Y2'])
-
+'''
+s1 = pd.Series(['X1', 'X1', 'X2', 'X2', 'X2', 'X2'])
+s2 = pd.Series(['Y1', 'Y1', 'Y1', 'Y2', 'Y2', 'Y2'])
+'''
 
 # 建立两个数组
 def getEntropy(s):  # 定义熵
@@ -24,7 +24,7 @@ def getCondEntropy(s1, s2):  # 定义s1的条件s2的熵
         d[s1[i]] = d.get(s1[i], []) + [s2[i]]  # key是s1的值，value是一个数组，为s2的值，记录了s1的值下s2的分布
     length = 0
     for k in d:
-        print(d[k])
+        # print(d[k])
         length = length + len(d[k])
 
     return sum([getEntropy(d[k]) * len(d[k]) / length for k in d])
